@@ -12,3 +12,11 @@ option(
 	value: true,
 	description: 'run tests'
 	)
+
+option(
+  'package_subdir',
+  type: 'string',
+  value: '',
+  description: 'Subdirectory to append to all installed files, for use as subproject'
+)
+

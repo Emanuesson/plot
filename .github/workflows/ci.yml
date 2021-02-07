@@ -13,7 +13,7 @@ jobs:
     - name: Dependencies
       run: |
         sudo apt update
-        sudo apt install -y gcc meson valgrind
+        sudo apt install -y gcc meson valgrind cunit
     - name: Prebuild
       run: |
         rm -rf build

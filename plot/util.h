@@ -1,7 +1,7 @@
 #ifndef __UTIL_H
 #define __UTIL_H
 
-#include "plot.h"
+#include <plot/plot.h>
 
 int is_digit(char c);
 enum color char_to_color(char c);

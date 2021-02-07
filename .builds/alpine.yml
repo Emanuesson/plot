@@ -6,6 +6,7 @@ packages:
   - ninja
   - scdoc
   - valgrind
+  - cunit
 tasks:
   - setup: |
       meson setup \
