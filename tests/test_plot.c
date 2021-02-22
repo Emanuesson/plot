@@ -1,5 +1,7 @@
 /*
- * I owe you a descirption of this test
+ * A test that covers some basic plotting functions, like plot_plot and
+ * follow_plot. It will be linked against the shared library target of plot and
+ * therefore verifies if the code is still usable as shared library.
  */
 
 #define _GNU_SOURCE
@@ -122,7 +124,7 @@ main(int argc, char **argv)
 {
   CU_pSuite pSuite = NULL;
 
-  /* initialize the CUnit test registry */
+  /* Initialize the CUnit test registry */
   if (CUE_SUCCESS != CU_initialize_registry())
     return CU_get_error();
 
@@ -133,7 +135,7 @@ main(int argc, char **argv)
     return CU_get_error();
   }
 
-  /* add the tests to the suite */
+  /* Add the tests to the suite */
   /* NOTE - ORDER IS IMPORTANT - MUST TEST fread() AFTER fprintf() */
   if ((NULL == CU_add_test(pSuite, "test of plot()", test_plot)) ||
       (NULL == CU_add_test(pSuite, "test of plot() with second input", test_plot2d)) ||
